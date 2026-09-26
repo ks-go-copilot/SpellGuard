@@ -21,6 +21,6 @@ Please visit the live app here: [SpellGuard](https://0199a26b-b85f-0382-24f5-399
 ![SpellGuard](https://github.com/user-attachments/assets/54f25edd-8e97-43f2-b548-1ffb9e19013b)
 
 
-####Pending
+#### Pending                
 Pending20260925: Major Enhancement, define structure check
 
