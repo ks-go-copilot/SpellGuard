@@ -137,7 +137,11 @@ ui <- fluidPage(
     tags$div(
       style = "font-size: 12px; color: #555; background: #f8f9fa; border-left: 4px solid #2c7fb8; padding: 8px 10px; margin: 8px 0 8px 0;",
       HTML("<b>Note:</b> SpellGuard uses the <code>hunspell</code> package to detect spelling issues. More importantly, it integrates SDTM/ADaM/Define-Controlled Terms and other medical term to suit clinical-trial content.")
-    )      
+    ) ,
+    tags$div(
+      style = "font-size: 12px; color: #555; background: #f8f9fa; border-left: 4px solid #2c7fb8; padding: 8px 10px; margin: 8px 0 8px 0;",
+      HTML("<b>Note:</b> Pending20260925: Major Enhancement, define structure check")
+    )        
     ),
     mainPanel(
       DT::dataTableOutput("preview_dt"),
