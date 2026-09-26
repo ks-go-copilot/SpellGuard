@@ -203,6 +203,13 @@ server <- function(input, output, session) {
   
   # Takeda ADaM metafile  
   takeda_adammeta_vocab <- c("xpt", "ne", "Subseq", "cardiodynamic", "TLFs", "TFLs", "cQT", "Pretreatment", "AVISITs", "ValueLevel", "Alloimmune", "Concom", "EuroQoL", "HRQoL", "Calgary",  "iDSST", "Karolinska", "thrombocytopenic", "purpura", "iTTP", "MoCA", "Pouchitis", "Willebrand", "Href", "adrg", "Uppsala","WHODrug","Mutliracial","Eval","Hy's","CQs","questionnare","AyLO","AyHI", "AyIND","ByIND","covariates","adsl","subgrouping","adbase","adcqt","adeg","adexpsum","adlb","adnca","adpp","advs","qrs","adae","adcm","addv","admh","adpr","adda","SITEGRy","SITEGRyN","REGIONy", "REGIONyN","EuDRACT", "birthdate","propcase","Propcase","unblinding","Imput","Discont","rescreened","aval","Rasch")
+
+  # XML common keyword
+  xml_vocab <- c("ProtocolName", "StudyName", "StudyDescription", "EudraCT", "jRCT", "partialDatetime", "partialDate", "durationDatetime", "lt", "acrf", "csdrg", "sdrg", "adrg","dys", "wks", "mths", "sas", "txt", "proc", "pds", "smq", mdr")
+
+  # Medical terms gallery
+  medical_vocab <- c("Zasocitinib", "corticosteroids", "coccidiomycosis", "histoplasmosis", "guttate", "indeterminant", "lymphoproliferative", "adsorptive", "apheresis", "phototherapy", "excimer", "adalimumab", "etanercept", "infliximab", "certolizumab", "comorbid", "Mediford", "mmolCr")
+
   
   sheets_rv <- reactiveVal(NULL)
   results_list_rv <- reactiveVal(NULL)
@@ -217,7 +224,7 @@ server <- function(input, output, session) {
     user_whitelist <- user_whitelist[nzchar(user_whitelist)]
     
     # Combine user_vocab, sdtmct_vocab, and UI user whitelist
-    whitelist <- unique(c(user_vocab,adamct_vocab,sdtmmeta_vocab,adammeta_vocab,takeda_sdtmmeta_vocab,takeda_adammeta_vocab, sdtmct_vocab,study_vocab,user_whitelist))
+    whitelist <- unique(c(user_vocab,adamct_vocab,sdtmmeta_vocab,adammeta_vocab,takeda_sdtmmeta_vocab,takeda_adammeta_vocab, sdtmct_vocab,study_vocab,user_whitelist,xml_vocab,medical_vocab))
     
     withProgress(message = "Spell-checking all sheets...", value = 0, {
       res_list <- lapply(seq_along(sheets), function(i) {
