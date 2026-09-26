@@ -205,7 +205,7 @@ server <- function(input, output, session) {
   takeda_adammeta_vocab <- c("xpt", "ne", "Subseq", "cardiodynamic", "TLFs", "TFLs", "cQT", "Pretreatment", "AVISITs", "ValueLevel", "Alloimmune", "Concom", "EuroQoL", "HRQoL", "Calgary",  "iDSST", "Karolinska", "thrombocytopenic", "purpura", "iTTP", "MoCA", "Pouchitis", "Willebrand", "Href", "adrg", "Uppsala","WHODrug","Mutliracial","Eval","Hy's","CQs","questionnare","AyLO","AyHI", "AyIND","ByIND","covariates","adsl","subgrouping","adbase","adcqt","adeg","adexpsum","adlb","adnca","adpp","advs","qrs","adae","adcm","addv","admh","adpr","adda","SITEGRy","SITEGRyN","REGIONy", "REGIONyN","EuDRACT", "birthdate","propcase","Propcase","unblinding","Imput","Discont","rescreened","aval","Rasch")
 
   # XML common keyword
-  xml_vocab <- c("ProtocolName", "StudyName", "StudyDescription", "EudraCT", "jRCT", "partialDatetime", "partialDate", "durationDatetime", "lt", "acrf", "csdrg", "sdrg", "adrg","dys", "wks", "mths", "sas", "txt", "proc", "pds", "smq", mdr")
+  xml_vocab <- c("ProtocolName", "StudyName", "StudyDescription", "EudraCT", "jRCT", "partialDatetime", "partialDate", "durationDatetime", "lt", "acrf", "csdrg", "sdrg", "adrg","dys", "wks", "mths", "sas", "txt", "proc", "pds", "smq", "mdr")
 
   # Medical terms gallery
   medical_vocab <- c("Zasocitinib", "corticosteroids", "coccidiomycosis", "histoplasmosis", "guttate", "indeterminant", "lymphoproliferative", "adsorptive", "apheresis", "phototherapy", "excimer", "adalimumab", "etanercept", "infliximab", "certolizumab", "comorbid", "Mediford", "mmolCr")
