@@ -59,3 +59,15 @@ takeda_adammeta_vocab <- c("xpt", "ne", "Subseq", "cardiodynamic", "TLFs", "TFLs
 ````
 
 
+## 7. XML common keyword
+
+xml_vocab <- c("ProtocolName", "StudyName", "StudyDescription", "EudraCT", "jRCT", "partialDatetime", "partialDate", "durationDatetime", "lt", "acrf", "csdrg", "sdrg", "adrg","dys", "wks", "mths", "sas", "txt", "proc", "pds", "smq", mdr")
+
+## 8. Medical terms gallery
+medical_vocab <- c("Zasocitinib", "corticosteroids", "coccidiomycosis", "histoplasmosis", "guttate", "indeterminant", "lymphoproliferative", "adsorptive", "apheresis", "phototherapy", "excimer", "adalimumab", "etanercept", "infliximab", "certolizumab", "comorbid", "Mediford", "mmolCr")
+
+
+
+
+
+
